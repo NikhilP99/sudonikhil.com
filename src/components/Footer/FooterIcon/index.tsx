@@ -10,7 +10,7 @@ type FooterLinkProps = {
 const FooterLink = (props: FooterLinkProps) => {
   const { href, Icon } = props
   return (
-    <Link href={href} className="text-muted-foreground hover:text-primary">
+    <Link href={href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
       <Icon size={16} />
     </Link>
   )

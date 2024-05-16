@@ -28,7 +28,7 @@ const CustomLink = (props: LinkPropType) => {
   const { link, children } = props
   return (
     <span className="text-primary">
-      <Link href={link}>{children}</Link>
+      <Link href={link} target="_blank">{children}</Link>
     </span>
   )
 }
