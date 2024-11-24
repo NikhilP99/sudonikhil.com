@@ -3,6 +3,7 @@ import { withChildren } from "@/types";
 import { Inter } from "next/font/google";
 import '@/styles/globals.css'
 import Layout from "@/components/Layout";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +23,16 @@ export default function RootLayout(props: withChildren) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>   
       <body className={inter.className}>
-        <Layout>
-          {children}
-        </Layout>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Layout>
+             {children}
+            </Layout>
+        </ThemeProvider>
       </body>
     </html>
   );
