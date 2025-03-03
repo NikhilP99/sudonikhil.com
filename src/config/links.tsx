@@ -3,7 +3,7 @@ import { IconType } from "react-icons"
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 import { FiMail } from 'react-icons/fi'
 
-export const RESUME_LINK = "https://drive.google.com/file/d/1A2etLf1uy1VOmFig7j30W9crp_mPs4qC/view?usp=sharing"
+export const RESUME_LINK = "https://drive.google.com/file/d/1SVosonH9GD_nvqR_BrZFzcpHdLCK44TP/view"
 export const CONTACT_ME_LINK = "mailto:nikhilpatel.indore@gmail.com"
 
 type FooterLinkArray = {
